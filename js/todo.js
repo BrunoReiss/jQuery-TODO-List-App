@@ -1,1 +1,4 @@
-alert("CONNECTED!!!")
+//Check off specific todos by clicking
+$('li').click(function(){
+	$(this).toggleClass('done')
+})
