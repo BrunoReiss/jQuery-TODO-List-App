@@ -17,10 +17,14 @@ $('input[type="text"]').keypress(function(event){
 		//grabbing new todo text from input
 		var todoText = $(this).val();
 		//creating a new li and adding it to ul
-		$('ul').append('<li><span>X</span> '+todoText+'</li>');
+		$('ul').append('<li><span><i class="fa fa-trash"></i></span>'+todoText+'</li>');
 		//wiping input
 		$(this).val("")
 	}
+});
+
+$(".fa.fa-pencil").click(function(){
+	$('input[type="text"').fadeToggle(500, 'swing')
 })
 
 
